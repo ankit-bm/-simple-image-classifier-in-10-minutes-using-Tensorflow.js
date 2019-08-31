@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style type="text/css">
+      
+      body {
+    background: -webkit-linear-gradient(#93B874, #C9DCB9); 
+    background: -o-linear-gradient(#93B874, #C9DCB9); 
+    background: -moz-linear-gradient(#93B874, #C9DCB9); 
+    background: linear-gradient(#93B874, #C9DCB9); 
+    background-color: #93B874; 
+            }
+    </style>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+     <script> document.write("Hello World..! this is my first ML Project");</script>
+  </head>
+  <body>
+    <div id="console"></div>
+
+    <!-- Add webcam functionality -->
+        
+            <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+            <button id="class-a">Train A</button>
+            <button id="class-b">Train B</button>
+            <button id="class-c">Train C</button>
+
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
